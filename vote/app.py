@@ -8,8 +8,8 @@ from flask import Flask, g, make_response, render_template, request
 from redis import Redis
 
 # Configuration from environment variables or defaults
-option_a = os.getenv("OPTION_A", "Agree meow meow")
-option_b = os.getenv("OPTION_B", "Disagree change")
+option_a = os.getenv("OPTION_A", "Agree")
+option_b = os.getenv("OPTION_B", "Disagree")
 hostname = socket.gethostname()
 
 app = Flask(__name__)
